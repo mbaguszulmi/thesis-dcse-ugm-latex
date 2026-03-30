@@ -1,3 +1,4 @@
-Get started by customizing your environment (defined in the .idx/dev.nix file) with the tools and IDE extensions you'll need for your project!
+# thesis_latex-dcse_ugm
 
-Learn more at https://developers.google.com/idx/guides/customize-idx-env
+- LaTeX thesis template for DCSE UGM
+- Update fonts

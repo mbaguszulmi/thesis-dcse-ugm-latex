@@ -10,6 +10,10 @@
     # pkgs.python311Packages.pip
     # pkgs.nodejs_20
     # pkgs.nodePackages.nodemon
+    pkgs.tectonic
+    pkgs.python3
+    pkgs.python3Packages.pip
+    pkgs.python3Packages.pygments
   ];
   # Sets environment variables in the workspace
   env = {};
@@ -18,6 +22,8 @@
     extensions = [
       # "vscodevim.vim"
       "google.gemini-cli-vscode-ide-companion"
+      "texlab"
+      "latex-workshop"
     ];
     # Enable previews
     previews = {
@@ -42,12 +48,12 @@
         # Example: install JS dependencies from NPM
         # npm-install = "npm install";
         # Open editors for the following files by default, if they exist:
-        default.openFiles = [ ".idx/dev.nix" "README.md" ];
+        default.openFiles = [ "thesis.tex" "thesis.pdf" ];
       };
       # Runs when the workspace is (re)started
       onStart = {
-        # Example: start a background task to watch and re-build backend code
-        # watch-backend = "npm run watch-backend";
+        # # Example: start a background task to watch and re-build backend code
+        # install-pygments = "pip install Pygments";
       };
     };
   };

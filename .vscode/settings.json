@@ -1,0 +1,10 @@
+{
+    "latex-workshop.latex.external.build.args": [
+        "%DOC%.tex",
+        "-Z",
+        "shell-escape",
+        "-Z",
+        "continue-on-errors"
+    ],
+    "latex-workshop.latex.external.build.command": "tectonic"
+}

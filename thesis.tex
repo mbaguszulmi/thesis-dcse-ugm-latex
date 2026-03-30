@@ -1,0 +1,57 @@
+\documentclass[12pt, a4paper, onecolumn, oneside, final]{report}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{_resources/thesis-dcse}
+\input{settings}
+
+\begin{document}
+\input{_resources/cover}
+
+% Uncomment apabila perlu menggunakan cover dalam
+%\input{_resources/inside}
+
+\pagenumbering{roman}
+
+\setcounter{page}{2}
+
+\addChapter{LEMBAR PERSETUJUAN}
+\input{src/00-preamble/01-persetujuan}
+
+\addChapter{PERNYATAAN ORISINALITAS}
+\input{src/00-preamble/02-orisinalitas}
+
+
+%
+% Daftar isi, gambar, dan tabel
+%
+\phantomsection
+\tableofcontents
+\clearpage
+\phantomsection
+\listoffigures
+\clearpage
+\phantomsection
+\listoftables
+\clearpage
+\phantomsection
+\listoflistings
+\clearpage
+
+\pagenumbering{arabic}
+
+% ----------------------- CONTENTS ------------------------------------------------
+\input{src/01-contents/01-bab1}
+\input{src/01-contents/02-bab2}
+\input{src/01-contents/03-bab3}
+\input{src/01-contents/04-bab4}
+\input{src/01-contents/05-bab5}
+\input{src/01-contents/06-bab6}
+\input{src/01-contents/99-kesimpulan}
+% ------------------------- END CONTENTS ------------------------------------------
+\input{src/99-appendix/01-lampiran1}
+
+
+
+
+
+
+\end{document}
