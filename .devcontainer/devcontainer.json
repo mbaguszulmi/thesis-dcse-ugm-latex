@@ -1,0 +1,26 @@
+{
+    "name": "Tectonic LaTeX Env",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "James-Yu.latex-workshop",
+                "tamasfe.even-better-toml"
+            ],
+            "settings": {
+                "latex-workshop.latex.recipes": [
+                    {
+                        "name": "tectonic",
+                        "tools": [
+                            "tectonic"
+                        ]
+                    }
+                ],
+                "latex-workshop.view.pdf.viewer": "tab"
+            }
+        }
+    },
+    "remoteUser": "root"
+}

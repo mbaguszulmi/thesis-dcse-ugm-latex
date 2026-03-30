@@ -6,5 +6,8 @@
         "-Z",
         "continue-on-errors"
     ],
-    "latex-workshop.latex.external.build.command": "tectonic"
+    "latex-workshop.latex.external.build.command": "tectonic",
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+    "workbench.startupEditor": "readme"
 }
